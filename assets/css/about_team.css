@@ -1,0 +1,10 @@
+/* About Team Section */
+.team-section {
+    padding: 6rem 0;
+}
+
+.team-intro {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}

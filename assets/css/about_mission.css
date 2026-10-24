@@ -1,0 +1,30 @@
+/* About Mission & Vision Section */
+.mission-vision-section {
+    padding: 6rem 0;
+    background: var(--bg-surface);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mv-card {
+    background: var(--bg-body);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.mv-card:hover {
+    transform: translateY(-5px);
+}
+
+.mv-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}

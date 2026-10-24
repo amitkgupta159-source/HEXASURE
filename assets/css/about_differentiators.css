@@ -1,0 +1,24 @@
+/* About Differentiators Section */
+.diff-section {
+    padding: 6rem 0;
+    background: var(--bg-surface);
+}
+
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.diff-card {
+    padding: 2rem;
+    background: var(--bg-body);
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+}
+
+.diff-card h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}

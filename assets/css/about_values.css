@@ -1,0 +1,90 @@
+/* About Values Infographic Section */
+.values-section {
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.values-timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.values-timeline::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--border-color);
+    z-index: 0;
+}
+
+.value-item {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.value-marker {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-body);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+.value-item:hover .value-marker {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.value-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.value-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .values-timeline {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .values-timeline::before {
+        width: 2px;
+        height: 100%;
+        left: 20px;
+        top: 0;
+    }
+
+    .value-item {
+        display: flex;
+        text-align: left;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .value-marker {
+        margin: 0;
+        flex-shrink: 0;
+    }
+}

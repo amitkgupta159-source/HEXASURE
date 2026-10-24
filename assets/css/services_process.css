@@ -1,0 +1,64 @@
+/* Services Engagement Model (Process) */
+.process-section {
+    padding: 6rem 0;
+    background: var(--primary);
+    color: #fff;
+}
+
+.process-section h2,
+.process-section p {
+    color: #fff;
+}
+
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 4rem auto 0;
+}
+
+.process-step {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    min-width: 3rem;
+}
+
+.step-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Dark Mode Override for Process Section */
+[data-theme="dark"] .process-section {
+    background: var(--bg-surface);
+}
+
+[data-theme="dark"] .process-step {
+    background: rgba(255, 255, 255, 0.03);
+}

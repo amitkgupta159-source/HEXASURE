@@ -1,0 +1,48 @@
+/* Services Priority Focus Section */
+.priority-section {
+    padding: 6rem 0;
+    background: var(--bg-body);
+}
+
+.priority-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.priority-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.priority-card::before {
+    content: '⭐';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.priority-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.priority-card p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.priority-outcome {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 500;
+}

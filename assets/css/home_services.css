@@ -1,0 +1,53 @@
+/* Service Card Specifics */
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-icon {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--border-color);
+    opacity: 0.5;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    line-height: 1;
+}
+
+.service-list {
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+.service-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+/* Priority Badge */
+.badge-priority {
+    display: inline-block;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    vertical-align: middle;
+}
+
+[data-theme='dark'] .badge-priority {
+    background: rgba(96, 165, 250, 0.15);
+    color: #93c5fd;
+    border-color: rgba(96, 165, 250, 0.3);
+}

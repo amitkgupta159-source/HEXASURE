@@ -1,0 +1,43 @@
+/* About Approach & Why Us Section */
+.approach-section {
+    padding: 6rem 0;
+    background: var(--primary);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Mode Override */
+[data-theme="dark"] .approach-section {
+    background: var(--bg-surface);
+}
+
+.approach-section h2,
+.approach-section h3,
+.approach-section h4,
+.approach-section p {
+    color: #fff;
+}
+
+[data-theme="dark"] .approach-section h2,
+[data-theme="dark"] .approach-section h3,
+[data-theme="dark"] .approach-section p {
+    color: var(--text-main);
+}
+
+.approach-section p {
+    opacity: 0.9;
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.why-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    backdrop-filter: blur(10px);
+}

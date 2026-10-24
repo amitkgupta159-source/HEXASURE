@@ -1,0 +1,15 @@
+/* About Client Promise Section */
+.promise-section {
+    padding: 6rem 0;
+    text-align: center;
+    background: var(--bg-body);
+}
+
+.promise-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    border: 1px solid var(--accent);
+    border-radius: 1rem;
+    background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-body) 100%);
+}
